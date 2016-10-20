@@ -19,6 +19,9 @@ body {
     width: 50%;
     height: 100vw;
     float: left;
+}
+
+.text_right{
     margin-top: 20%;
     margin-bottom: 20%;
     margin-left: 10%;
