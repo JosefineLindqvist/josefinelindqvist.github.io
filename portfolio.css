@@ -19,8 +19,8 @@ body {
     width: 50%;
     height: 100vw;
     float: left;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
