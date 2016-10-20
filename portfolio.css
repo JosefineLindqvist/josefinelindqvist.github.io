@@ -15,9 +15,9 @@ body {
 }
 
 .content_right{
-    background-color: #ccc53c;
-    width: 50%;
-    height: 100vw;
+    background-image: url("edge_img1.png");
+    width: 100%;
+    height: auto;
     float: left;
 }
 
