@@ -22,12 +22,16 @@ body {
 }
 
 .content_right{
-    width: 100%;
+    width: 50%;
     height: auto;
     float: left;
+
 }
 
 .text_right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin-top: 20%;
     margin-bottom: 20%;
     margin-left: 10%;
