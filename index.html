@@ -9,85 +9,9 @@
 
 <body>
 
-<div id="menucontainer">
-    <a href="#">Josefine Lindqvist</a>
-
-    <div class="menuitems">
-        <a href="#">Portfolio</a>
-        <a href="#">About</a>
-    </div>
-</div>
-
-<div class="fullscreen"></div>
+<h1>Josefine Lindqvist</h1>
 
 
-
-<div class="content">
-    <div class="text">
-    <h2>UX-Designer</h2>
-    <h1>Netlight</h1>
-
-    <p>Netlight grundades 1999 och är en konsultfirma verksam inom IT och management. De har kontor i Stockholm, Oslo, München, Berlin, Hamburg, London, Paris och Helsingfors.
-    </p>
-    <p>Varje år har Netlight en konferens för sina anställda som är kallad Edge Conference. Till detta event behövdes en hemsida som skulle fungera som en nyhetskanal, där inlägg skulle laddas upp kontinuerligt innan eventets start.
-    </p>
-     <div class="methods">
-        <h3>Methods</h3>
-        Brainstorming<br>
-        Wireframing<br>
-        Mobile first<br>
-        Guerrillatest<br>
-     </div>
-     <div class="tools">
-        <h3>Tools</h3>
-        Pen and paper<br>
-        Sketch
-      </div>
-     </div>
-</div>
-
-<div class="img_slider" id="change_img" style="background-image: "">
-<button class="prev_button" onClick="previousImage()">
-    <img src="prev_button.png" class="arrow">
-</button>
-<button class="next_button" onClick="nextImage()">
-    <img src="next_button.png" class="arrow">
-</button>
-
-
-</div>
-
-<script type="text/javascript">
-
-var myImage = document.getElementById("change_img");
-
-var imageArray = ["url('edge_img1.png')", 'url("edgeC16_img2.png")', 'url("edgeC16_img3.png")', 'url("coursecat_icon2.png")'];
-
-var imageIndex = 0;
-
-function firstImage() {
-    myImage.style.backgroundImage = imageArray[imageIndex];
-}
-
-function nextImage() {
-        imageIndex = (imageIndex + 1) % imageArray.length;
-         if (imageIndex >= imageArray.length) {
-             imageIndex = 0;
-          }
-    myImage.style.backgroundImage = imageArray[imageIndex];
-}
-
-function previousImage() {
-     imageIndex = (imageIndex - 1);
-         if (imageIndex < 0) {
-           imageIndex = (imageArray.length - 1);
-         }
-      myImage.style.backgroundImage = imageArray[imageIndex];
-}
-
-firstImage();
-
-</script>
 
 </body>
 
