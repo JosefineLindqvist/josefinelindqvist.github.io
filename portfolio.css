@@ -45,11 +45,22 @@ body {
     border: 1px solid black ;
     margin-left: 10px ;
     margin-right: 10px;
+    overflow:hidden;
 }
 
 .logo {
-    max-width: 40vh;
-    max-height: 7vh
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 12%;
+    padding-top: 38%;
+    z-index: 10;
+}
+
+#sky {
+    max-width: 100%;
+    z-index: 1;
+
 }
 
 #menucontainer {
