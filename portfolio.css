@@ -10,10 +10,9 @@ body {
 
 #header {
     text-align: center;
-    padding-top: 20%;
+    margin-top: 35vh;
     font-family: SignPainter;
     font-size: 100px;
-    margin-top: 0;
     color: #5EB6A6;
 }
 
@@ -31,36 +30,48 @@ body {
     font-family: Avenir Next;
     font-size: 20px;
     color: #9B9B9B;
+    margin-bottom: 35vh;
 }
 
-#projects {
+.projectbox {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 80vw;
+    background-color: #ffffff;
+    padding-left: 50px;
     display: flex;
-    justify-content: center;
-    margin-top: 20%;
+    align-items: center;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 20px 0 rgba(0, 0, 0, 0.05);
+    margin-bottom: 50px;
 }
 
-.box {
-    height: 40vh;
-    width: 40%;
-    border: 1px solid black ;
-    margin-left: 10px ;
-    margin-right: 10px;
-    overflow:hidden;
+.projectbox:hover {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15), 0 2px 20px 0 rgba(0, 0, 0, 0.15);
+    transition:all 0.5s;
 }
 
-.logo {
-    margin: auto;
-    display: block;
-    max-width: 80%;
+.thumbnail {
+    width: 20%;
+    position: relative;
+    overflow: hidden;
+    /*border: 1px solid black;*/
+    vertical-align: middle;
+}
+
+.fit {
+    height: 100%;
+    width: 100%;
+}
+
+.decription {
+    padding-left: 20px;
+}
+
+.clogo {
+    max-width: 20%;
     max-height: 12%;
-    padding-top: 38%;
-    z-index: 10;
-}
-
-#sky {
-    max-width: 100%;
-    z-index: 1;
-
+    padding: 50px;
 }
 
 #menucontainer {
@@ -99,12 +110,14 @@ body {
     margin: 0 auto;
 }
 
-h1 {
+h1 {margin: 0px;
+    font-size: 50px;
+    color: #000000;
 }
 
-h2 {text-transform: uppercase;
+h2 {
     font-size: 15px;
-    margin-bottom: -10px;
+    margin:0px;
     color: #9B9B9B;
 }
 
