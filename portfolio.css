@@ -37,30 +37,6 @@ body {
     align-items: center;
 }
 
-.thumbnail {
-    width: 20%;
-    position: relative;
-    overflow: hidden;
-    /*border: 1px solid black;*/
-    vertical-align: middle;
-}
-
-.fit {
-    height: 100%;
-    width: 100%;
-}
-
-.decription {
-    padding-left: 20px;
-    width: 40vw;
-}
-
-.clogo {
-    max-width: 20%;
-    max-height: 12%;
-    padding: 50px;
-}
-
 .projects {
      display: flex;
      justify-content: center;
@@ -84,21 +60,6 @@ body {
 .box:hover .overlay {
     opacity: 1;
     transition:all 0.5s;
-}
-
-.overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    background-color: rgba(255,255,255,0.8);
-}
-
-.overlaytext {
-    padding: 20px;
-    font-family: Avenir Next;
-    font-size: 20px;
-
 }
 
 .name {
