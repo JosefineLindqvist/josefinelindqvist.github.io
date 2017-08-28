@@ -9,28 +9,22 @@ body {
 }
 
 #header {
+    margin-top: 40vh;
+    margin-bottom: 40vh;
+}
+
+#fullname {
     text-align: center;
-    margin-top: 35vh;
     font-family: SignPainter;
     font-size: 100px;
     color: #5EB6A6;
 }
 
-.line {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80px;
-    height: 2px;
-    background-color: #4A4A4A;
-    margin-top: 10px;
-}
-
-#role {
+.role {
     text-align: center;
     font-family: Avenir Next;
     font-size: 20px;
     color: #9B9B9B;
-    margin-bottom: 35vh;
 }
 
 .projectbox {
@@ -67,27 +61,55 @@ body {
     padding: 50px;
 }
 
-#projects {
+.projects {
      display: flex;
      justify-content: center;
-    align-items: center;
+     align-items: center;
+    margin-bottom: 100px;
 
  }
 
 .box {
-     height: 40vh;
-     width: 40%;
-     border: 1px solid black ;
-     margin-left: 10px ;
+    position: relative;
+     width: 30%;
+     margin-left: 10px;
      margin-right: 10px;
+     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 20px 0 rgba(0, 0, 0, 0.05);
  }
 
 .logo {
-     max-width: 40vh;
-     max-height: 7vh
+    width: 100%;
  }
 
+.box:hover .overlay {
+    opacity: 1;
+    transition:all 0.5s;
+}
 
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.overlaytext {
+    padding: 20px;
+    font-family: Avenir Next;
+    font-size: 20px;
+
+}
+
+.name {
+    text-align: center;
+    font-family: Avenir Next;
+    font-size: 34px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+
+}
 
 #menucontainer {
     background-color: Transparent;
@@ -131,8 +153,10 @@ h1 {margin: 0px;
 }
 
 h2 {
-    font-size: 15px;
-    margin:0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    text-align: center;
     color: #9B9B9B;
 }
 
