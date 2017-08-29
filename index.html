@@ -1,14 +1,22 @@
-
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Josefine Lindqvist Portfolio</title>
     <link href="portfolio.css" rel="stylesheet" type="text/css">
+
+    <script src="jquery.js"></script>
+    <script>
+        $(function(){
+            $("#includedContent").load("menu.html");
+        });
+    </script>
+
 </head>
 
 <body>
 
-<?php include("menu.php"); ?>
+<div id="includedContent"></div>
+
 
 
 <div id="right">
