@@ -11,6 +11,7 @@ html, body {
 
 a {
     text-decoration: none;
+
 }
 
 #left {
@@ -71,14 +72,8 @@ a {
     color: #9B9B9B;
 }
 
-.projectbox {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px;
-    background-color: #ffffff;
-    padding-left: 50px;
-    display: flex;
-    align-items: center;
+#project {
+    margin-bottom: 50px;
 }
 
 .projects {
