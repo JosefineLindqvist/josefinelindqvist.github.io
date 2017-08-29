@@ -11,6 +11,14 @@
         $(function(){
             $("#includedMenu").load("https://josefinelindqvist.github.io/menu.html");
         });
+
+        $('a').click(function(){
+            $('html, body').animate({
+                scrollTop: $( $(this).attr('href') ).offset().top
+            }, 500);
+            return false;
+        });
+
     </script>
 
 </head>
@@ -38,7 +46,7 @@
 
 </div>
 
-<div id="projects"></div>
+<a id="projectAnc"></a>
 
 
 <div class="projects">
