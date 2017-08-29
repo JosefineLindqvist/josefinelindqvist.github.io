@@ -1,11 +1,54 @@
 @font-face { font-family: Avenir Next; src: url('Avenir.ttc'); }
 @font-face { font-family: SignPainter; src: url('SignPainter.ttc'); }
 
-body {
+html, body {
     margin: 0;
     padding: 0;
     font-family: Avenir Next, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#left {
+    width: 70px;
+    overflow: hidden;
+    height: 100%;
+    position: fixed;
+    justify-content: center;
+    display: flex;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+#menu {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.menuicon {
+    width: 30px;
+}
+
+.menutext {
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #9B9B9B;
+
+}
+
+#menuitems {
+    margin-top: 30vh;
+
+}
+
+#right {
+    width: 95%;
+    height: auto;
+    position: absolute;
+    right: 0;
 }
 
 #header {
@@ -41,12 +84,12 @@ body {
      display: flex;
      justify-content: center;
      align-items: center;
-    margin-bottom: 100px;
+     margin-bottom: 100px;
 
  }
 
 .box {
-    position: relative;
+     position: relative;
      width: 30%;
      margin-left: 10px;
      margin-right: 10px;
@@ -57,8 +100,8 @@ body {
     width: 100%;
  }
 
-.box:hover .overlay {
-    opacity: 1;
+.box:hover {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.2);
     transition:all 0.5s;
 }
 
@@ -71,6 +114,34 @@ body {
     margin-bottom: 20px;
 
 }
+
+.back {
+    margin: 30px;
+}
+
+.back_img {
+    height: 20px;
+    float: left;
+    margin-top: 2px;
+}
+
+.back_text {
+    font-size: 20px;
+    float: left;
+    padding-left: 10px;
+    color: #8d8d8d;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 #menucontainer {
     background-color: Transparent;

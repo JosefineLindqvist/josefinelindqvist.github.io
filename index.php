@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 
 <html>
 <head>
@@ -8,6 +7,12 @@
 </head>
 
 <body>
+
+<?php include("menu.php"); ?>
+
+
+<div id="right">
+
 <div id="header">
     <div class="role">
         Hello! My name is
@@ -26,13 +31,12 @@
 
 
 <div class="projects">
-
-    <div class="box">
+    <a class="box" href="TC.html" id="TC">
         <img src="thumbnails/thomascook_box.png" class="logo">
         <h2>Responsive Design</h2>
         <div class="name">Thomas Cook</div>
 
-    </div>
+    </a>
 
     <div class="box">
         <img src="thumbnails/x5_box.png" class="logo">
@@ -65,6 +69,8 @@
         <div class="name">Click</div>
     </div>
 </div>
+
+
 
 
 
