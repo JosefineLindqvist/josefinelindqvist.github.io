@@ -1,76 +1,92 @@
-@font-face { font-family: Avenir Next; src: url('Avenir.ttc'); }
-@font-face { font-family: SignPainter; src: url('SignPainter.ttc'); }
-
 html, body {
     margin: 0;
     padding: 0;
     font-family: Avenir Next, Helvetica, sans-serif;
     font-size: 16px;
     height: 100%;
-    scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none;
+    color: #6D6D6D;
 
 }
 
-#left {
-    width: 70px;
-    overflow: hidden;
-    height: 100%;
-    position: fixed;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 20px 0 rgba(0, 0, 0, 0.05);
-}
+h1 {
+    font-size: 12px;
+    color: #4F4F4F;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;}
+
+
 
 #menu {
-    padding-top: 20px;
-    text-align: center;
-}
-
-.menuicon {
-    width: 30px;
-}
-
-.menutext {
-    margin-bottom: 20px;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
     font-size: 12px;
-    color: #9B9B9B;
+    color: #6D6D6D;
     text-transform: uppercase;
-
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 10;
 }
 
-#menuitems {
-    margin-top: 30vh;
-
+#menu_left {
+    float: left;
+    margin-left: 40px;
 }
 
-#right {
-    height: auto;
-    position: absolute;
-    margin-left: 70px;
+#menu_right {
+     float: right;
+ }
+
+.menuitem{
+    margin-right:40px;
 }
+
 
 #top {
     height: 100vh;
     justify-content: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
-#fullname {
+#quote {
     text-align: center;
     font-family: SignPainter;
-    font-size: 100px;
+    font-size: 80px;
     color: #5EB6A6;
+    max-width: 780px;
 }
 
-.role {
-    text-align: center;
-    font-family: Avenir Next;
-    font-size: 20px;
-    color: #9B9B9B;
+#arrow {
+    bottom: 15px;
+    position: absolute;
 }
+
+.line {
+    height: 2px;
+    width: 20px;
+    background-color: #4A4A4A;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.work_text {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 100px;
+    font-size: 18px;
+}
+
 
 #projects {
     margin-bottom: 50px;
@@ -80,17 +96,16 @@ a {
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-bottom: 100px;
+     margin-bottom: 5px;
 
  }
 
-.box {
-     position: relative;
-     width: 30%;
-     margin-left: 10px;
-     margin-right: 10px;
-     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 20px 0 rgba(0, 0, 0, 0.05);
- }
+.box2 {
+    position: relative;
+    width: 45%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
 .logo {
     width: 100%;
@@ -130,12 +145,14 @@ a {
 
 }
 
-.box2 {
-    position: relative;
-    width: 45%;
-    margin-left: 5px;
-    margin-right: 5px;
-}
+
+
+
+
+
+
+
+
 
 
 
@@ -181,9 +198,7 @@ a {
     margin: 0 auto;
 }
 
-h1 {margin: 0px;
-    font-size: 50px;
-    color: #000000;
+
 }
 
 h2 {

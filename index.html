@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Josefine Lindqvist Portfolio</title>
     <link href="portfolio.css" rel="stylesheet" type="text/css">
+    <link href="fonts/font.css" rel="stylesheet" type="text/css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
@@ -19,31 +20,32 @@
             return false;
         });
 
+        $(window).scroll(function() {
+            if ($(this).scrollTop()> 20) {
+                $('nav').fadeOut();
+            } else {
+                $('nav').fadeIn();
+            }
+        });
+
 
     </script>
 
 </head>
 
 <body>
-
 <div id="includedMenu"></div>
 
-
-<div id="right">
-
 <div id="top">
-    <div class="role">
-        Hello! My name is
-    </div>
-
-    <div id="fullname">
-        Josefine Lindqvist
-    </div>
 
 
-    <div class="role">
-        I'm a UX/UI-Designer
+    <div id="quote">
+        I’m a problem solver, with design as my tool
     </div>
+
+    <nav id="arrow">
+    <img src="scroll_arrow.png">
+    </nav>
 
 </div>
 
@@ -51,7 +53,15 @@
 
 
     <div id="projects"></div>
-    
+
+<h1>Work</h1>
+<div class="line"></div>
+<div class="work_text">
+    My passion in life is to create innovative and user friendly products. I work with everything from UX strategy and
+    usability testing to product design.
+</div>
+
+
 
     <div class="projects">
 
