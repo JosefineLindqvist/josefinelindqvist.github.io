@@ -102,7 +102,7 @@ h3{
     text-align: center;
     width: 500px;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     font-size: 18px;
 }
 
@@ -186,13 +186,29 @@ h3{
         font-size: 40px;
     }
 
-    .desktop {display:none;}
-    .mobile {display:block}
+    .desktop {
+        display:none;
+    }
 
-    .projects {flex-direction: column;}
+    .mobile {
+        display:block;
+        margin-bottom: 30px;
+    }
+
+    .projects {
+        flex-direction: column;
+        margin-bottom: 300px;
+    }
+
+    .content {
+        margin-left: 0;
+        margin-right: 0;
+        width: 90%;
+    }
 
     .desc_text {
         width: auto;
+        margin-bottom: 100px;
     }
 
     .methods {
