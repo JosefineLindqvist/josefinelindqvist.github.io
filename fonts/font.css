@@ -107,7 +107,7 @@
 }
 
 @font-face {
-    font-family: "SignPainter-HouseScript";
+    font-family: "SignPainter";
     src: url("SignPainter-HouseScript.woff") format("woff"),
             url("SignPainter-HouseScript.svg#SignPainter-HouseScript") format("svg"),
             url("SignPainter-HouseScript.ttf") format("truetype");
