@@ -136,19 +136,17 @@ h3{
 @media (max-device-width: 600px) {
 
     #menu {
-        position: fixed; /* Set the navbar to fixed position */
-        top: 0; /* Position the navbar at the top of the page */
-        width: 100%; /* Full width */
         font-size: 30px;
-        color: #6D6D6D;
-        text-transform: uppercase;
         font-weight: 700;
         padding-top: 30px;
         padding-bottom: 30px;
-        background-color: rgba(255, 255, 255, 0.9);
-        z-index: 10;
     }
 
+
+    #quote {
+        font-size: 120px;
+        max-width: 780px;
+    }
 
 
 }
