@@ -4,6 +4,10 @@ html, body {
     font-family: AvenirNext, Helvetica, sans-serif;
     font-size: 16px;
     height: 100%;
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 a {
@@ -16,7 +20,8 @@ h1 {
     color: #4F4F4F;
     text-transform: uppercase;
     font-weight: bold;
-    text-align: center;}
+    text-align: center;
+}
 
 h2 {
     font-size: 12px;
@@ -119,21 +124,45 @@ h3{
 
 .desc_text {
     width: 500px;
-    margin: auto;
     margin-bottom: 50px;
 }
 
 .methods {
     width: 50%;
     float:left;
+    font-size: 16px;
 }
 
 .tools {
     width: 50%;
     float:right;
+    font-size: 16px;
 }
 
+.desktop {display:block;}
+.mobile {display:none}
+
 @media (max-device-width: 600px) {
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: AvenirNext, Helvetica, sans-serif;
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+}
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 60px;
+
+    }
 
     #menu {
         font-size: 30px;
@@ -146,6 +175,32 @@ h3{
     #quote {
         font-size: 120px;
         max-width: 780px;
+    }
+
+    .arrow {
+        width: 50px;
+    }
+
+    .work_text {
+        width: 700px;
+        font-size: 30px;
+    }
+
+    .desktop {display:none;}
+    .mobile {display:block}
+
+    .projects {flex-direction: column;}
+
+    .desc_text {
+        width: auto;
+    }
+
+    .methods {
+        font-size: 30px;
+    }
+
+    .tools {
+        font-size: 30px;
     }
 
 
