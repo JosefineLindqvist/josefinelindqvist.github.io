@@ -108,7 +108,7 @@
 
 @font-face {
     font-family: 'SignPainter-HouseScript';
-    src: url('SignPainter-HouseScript.woff') format('woff'),
+    src: /*url('SignPainter-HouseScript.woff') format('woff'),*/
     url('SignPainter-HouseScript.ttf') format('truetype'),
     url('SignPainter-HouseScript.svg#SignPainter-HouseScript') format('svg');
     font-weight: normal;
