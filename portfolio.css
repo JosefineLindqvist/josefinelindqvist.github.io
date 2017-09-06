@@ -4,10 +4,6 @@ html, body {
     font-family: AvenirNext, Helvetica, sans-serif;
     font-size: 16px;
     height: 100%;
-    text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
 }
 
 a {
@@ -30,7 +26,7 @@ a:hover {
 
 
 h1 {
-    font-size: 12px;
+    font-size: 0.725em;
     color: #4F4F4F;
     text-transform: uppercase;
     font-weight: bold;
@@ -38,7 +34,7 @@ h1 {
 }
 
 h2 {
-    font-size: 12px;
+    font-size: 0.725em;
     color: #4F4F4F;
     text-transform: uppercase;
     font-weight: bold;
@@ -46,10 +42,14 @@ h2 {
 }
 
 h3{
-    font-size: 35px;
+    font-size: 2.175em;
     color: #4F4F4F;
     font-weight: normal;
     margin-top: 0;
+}
+
+p {
+    font-size: 1rem;
 }
 
 
@@ -58,7 +58,7 @@ h3{
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    font-size: 12px;
+    font-size: 0.725em;
     color: #6D6D6D;
     text-transform: uppercase;
     font-weight: 700;
@@ -84,24 +84,43 @@ h3{
 
 #top {
     height: 100vh;
-    justify-content: center;
+    -webkit-justify-content: center;
+    display: -webkit-flex; /* Safari */
+    display: -ms-flexbox;
     display: flex;
+    -webkit-align-items: center; /* Safari 7.0+ */
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.top-grow {
+    flex-grow: 1;
+    flex-basis: 100%;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    display: -webkit-flex; /* Safari */
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 #quote {
     text-align: center;
     font-family: SignPainter;
-    font-size: 80px;
+    font-size: 4.85em;
     color: #5EB6A6;
     max-width: 780px;
 }
 
 #arrow {
-    bottom: 15px;
-    position: absolute;
+    margin-bottom: 15px;
 }
+
 
 .line {
     height: 2px;
@@ -117,7 +136,6 @@ h3{
     width: 500px;
     margin: auto;
     margin-bottom: 150px;
-    font-size: 18px;
 }
 
 #work {
@@ -144,13 +162,11 @@ h3{
 .methods {
     width: 50%;
     float:left;
-    font-size: 16px;
 }
 
 .tools {
     width: 50%;
     float:right;
-    font-size: 16px;
 }
 
 .desktop {display:block;}
@@ -159,23 +175,10 @@ h3{
 @media (max-device-width: 600px) {
 
     html, body {
-        margin: 0;
-        padding: 0;
-        font-family: AvenirNext, Helvetica, sans-serif;
-        font-size: 40px;
+        font-size: 150%;
     }
 
-    h1 {
-        font-size: 30px;
-}
 
-    h2 {
-        font-size: 30px;
-    }
-
-    h3{
-        font-size: 70px;
-    }
 
     a {
         border-bottom: 0 solid rgba(192, 192, 192, 0);
@@ -186,7 +189,6 @@ h3{
     }
 
     #menu {
-        font-size: 30px;
         font-weight: 700;
         padding-top: 30px;
         padding-bottom: 30px;
@@ -194,7 +196,6 @@ h3{
 
 
     #quote {
-        font-size: 120px;
         max-width: 780px;
     }
 
@@ -204,7 +205,6 @@ h3{
 
     .work_text {
         width: 90%;
-        font-size: 40px;
     }
 
     .desktop {
@@ -230,17 +230,10 @@ h3{
     }
 
     .desc_text {
-        width: auto;
+        width: 100%;
         margin-bottom: 100px;
     }
 
-    .methods {
-        font-size: 40px;
-    }
-
-    .tools {
-        font-size: 40px;
-    }
 
 
 }

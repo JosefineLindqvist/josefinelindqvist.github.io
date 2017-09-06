@@ -27,6 +27,15 @@
             });
         });
 
+        $(window).scroll(function() {
+            if ($(this).scrollTop()> 20) {
+                $('#arrow').fadeOut();
+            } else {
+                $('#arrow').fadeIn();
+            }
+        });
+
+
     </script>
 
 </head>
@@ -35,12 +44,18 @@
     <div id="includedMenu"></div>
 
     <div id="top">
+        <div class="top-grow">
+
+        </div>
         <div id="quote">
             I’m a problem solver, with design as my tool
         </div>
-        <nav id="arrow">
-            <img src="scroll_arrow.png" class="arrow">
-        </nav>
+
+        <div class="top-grow">
+            <img src="scroll_arrow.png" id="arrow">
+        </div>
+
+        </div>
     </div>
 
     <div id="work" class="hello"></div>
@@ -48,8 +63,10 @@
     <h1>Work</h1>
     <div class="line"></div>
     <div class="work_text">
+        <p>
         My passion in life is to create innovative and user friendly products. I work with everything from UX strategy and
         usability testing to product design.
+        </p>
     </div>
 
     <div class="projects">
@@ -59,16 +76,19 @@
             <h2>UX-Designer</h2>
             <h3>Thomas Cook</h3>
             <div class="desc_text">
+                <p>
                 Thomas Cook is the owner of the travel companies Ving, Spies, Tjäreborg and Globetrotter. They were
-                working on making their website responsive to enhance their mobile experience.<br><br>
+                making their website responsive to enhance their mobile experience.<br><br>
 
-                The responsibilities I had was to work with a mobile first perspective to solve identified problems
-                trough design. This included creating wireframes, prototypes and to conduct usability testings while
-                communicating with stakeholders and developers.
+                The main responsibility I had was to work with a mobile first perspective to solve identified user
+                problems trough design. This included creating wireframes, prototypes and to conduct usability
+                testings while communicating with stakeholders and developers.
+                </p>
             </div>
             <div>
                 <div class="methods">
                     <h2>Methods</h2>
+                    <p>
                         Competitor Analysis<br>
                         Requirements<br>
                         Wireframing<br>
@@ -77,13 +97,16 @@
                         Usability Testing<br>
                         Mobile First<br>
                         Agile<br>
+                    </p>
                 </div>
                 <div class="tools">
                     <h2>Tools</h2>
+                    <p>
                         Adobe Photoshop<br>
                         InVision<br>
                         Balsamiq<br>
                         Adobe XD<br>
+                    </p>
                 </div>
              </div>
         </div>
@@ -95,16 +118,19 @@
             <h2>UX-Designer</h2>
             <h3>X5 Music</h3>
             <div class="desc_text">
-                X5 Music business is about packaging and distributing music for different outlets, i.e iTunes and
-                Spotify. They wanted to create a completely new product from scratch.<br><br>
+                <p>
+                X5 Music works with packaging and distributing music for different outlets, i.e iTunes and
+                Spotify. They were creating a completely new product from scratch and wanted help.<br><br>
 
-                I helped to create this product by researching user needs and requirements, producing user flows and
-                desiged the final product. I also conducted usability tests with users to gather feedback and
-                communicated these to stakeholders.
+                My responsibilities were to create this product by researching user needs and requirements,
+                producing user flows and design the final product. I also conducted usability tests with users to
+                gather feedback to calidate ideas and communicated the results to stakeholders.
+                <p>
             </div>
             <div>
                 <div class="methods">
                     <h2>Methods</h2>
+                    <p>
                         Competitor Analysis<br>
                         Requirements<br>
                         User Flows<br>
@@ -113,11 +139,14 @@
                         Prototyping <br>
                         Usability Testing<br>
                         Agile
+                    </p>
                 </div>
                 <div class="tools">
                     <h2>Tools</h2>
+                    <p>
                         Sketch<br>
                         Marvel<br>
+                    </p>
                 </div>
             </div>
         </div>
@@ -131,16 +160,19 @@
             <h2>Lead UX-Designer</h2>
             <h3>Vipps</h3>
             <div class="desc_text">
-                Thomas Cook is the owner of the travel companies Ving, Spies, Tjäreborg and Globetrotter. They were
-                working on making their website responsive to enhance their mobile experience.<br><br>
+                <p>
+                Vipps is a norwegian payment application owned by the bank DNB. They wanted to test their expansion
+                possibilities and therefore wanted to do a Proof of Concept.<br><br>
 
-                The responsibilities I had was to work with a mobile first perspective to solve identified problems
-                trough design. This included creating wireframes, prototypes and to conduct usability testings while
-                communicating with stakeholders and developers.
+                I was responsible to drive this project forward and held workshops, produced requirements, concepts and
+                wireframes. To test the PoC I invited users to try it out and validate the idea. The results were
+                communicated to stakeholders at the company.
+                </p>
             </div>
             <div>
                 <div class="methods">
                     <h2>Methods</h2>
+                    <p>
                         Workshop<br>
                         Requirements<br>
                         User Flows<br>
@@ -148,11 +180,14 @@
                         Prototyping<br>
                         Usability Testing<br>
                         Agile<br>
+                    </p>
                 </div>
                 <div class="tools">
                     <h2>Tools</h2>
+                    <p>
                         Sketch<br>
                         Marvel<br>
+                    </p>
                 </div>
             </div>
         </div>
@@ -165,15 +200,18 @@
             <h2>UX-Designer</h2>
             <h3>Tradera</h3>
             <div class="desc_text">
-                Tradera is one of the leading online commerce services in Sweden. They were creating a new webpage from
-                skratch to respond better to mobile platforms.<br><br>
+                <p>
+                Tradera is one of the leading online commerce services in Sweden. They were creating a new webpage to
+                work better in mobile devices.<br><br>
                 My responsibilities were to research user needs and behaviours by conducting surveys, usability tests and
-                interviews. With these insights I could work to solve user problems through concept, wireframe and prototype
-                creations.
+                interviews. With these insights I worked to solve user problems by creating concepts, wireframes and
+                prototypes that were implemented into the product.
+                </p>
             </div>
             <div>
                 <div class="methods">
                     <h2>Methods</h2>
+                    <p>
                         Personas<br>
                         Surveys<br>
                         Wireframing<br>
@@ -181,15 +219,18 @@
                         Usability Testing<br>
                         Mobile First<br>
                         Kanban<br>
+                    </p>
                 </div>
                 <div class="tools">
                     <h2>Tools</h2>
+                    <p>
                         Sketch<br>
                         UXpin<br>
                         Adobe Photoshop<br>
                         Adobe InDesign<br>
                         Google Analytics<br>
                         QlickView<br>
+                    </p>
                 </div>
             </div>
         </div>
