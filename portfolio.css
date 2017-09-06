@@ -120,7 +120,7 @@ h3{
     font-size: 18px;
 }
 
-#projects {
+#work {
     margin-bottom: 50px;
 }
 
@@ -216,7 +216,7 @@ h3{
         margin-bottom: 30px;
     }
 
-    #projects { margin-bottom: 100px;}
+    #work { margin-bottom: 100px;}
 
     .projects {
         flex-direction: column;
