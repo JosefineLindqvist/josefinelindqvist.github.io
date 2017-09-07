@@ -3,7 +3,10 @@ html, body {
     padding: 0;
     font-family: AvenirNext, Helvetica, sans-serif;
     font-size: 16px;
-    height: 100%;
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 a {
@@ -26,7 +29,7 @@ a:hover {
 
 
 h1 {
-    font-size: 0.725em;
+    font-size: 12px;
     color: #4F4F4F;
     text-transform: uppercase;
     font-weight: bold;
@@ -34,7 +37,7 @@ h1 {
 }
 
 h2 {
-    font-size: 0.725em;
+    font-size: 12px;
     color: #4F4F4F;
     text-transform: uppercase;
     font-weight: bold;
@@ -42,14 +45,15 @@ h2 {
 }
 
 h3{
-    font-size: 2.175em;
+    font-size: 36px;
     color: #4F4F4F;
     font-weight: normal;
     margin-top: 0;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 16px;
+    margin: 0;
 }
 
 
@@ -58,7 +62,7 @@ p {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    font-size: 0.725em;
+    font-size: 12px;
     color: #6D6D6D;
     text-transform: uppercase;
     font-weight: 700;
@@ -112,7 +116,7 @@ p {
 #quote {
     text-align: center;
     font-family: SignPainter;
-    font-size: 4.85em;
+    font-size: 80px;
     color: #5EB6A6;
     max-width: 780px;
 }
@@ -175,10 +179,24 @@ p {
 @media (max-device-width: 600px) {
 
     html, body {
-        font-size: 150%;
     }
 
+    h1 {
+        font-size: 30px;
+    }
 
+    h2{
+        font-size: 30px;
+
+    }
+
+    h3{
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 36px;
+    }
 
     a {
         border-bottom: 0 solid rgba(192, 192, 192, 0);
@@ -192,14 +210,16 @@ p {
         font-weight: 700;
         padding-top: 30px;
         padding-bottom: 30px;
+        font-size: 30px;
     }
 
 
     #quote {
         max-width: 780px;
+        font-size: 130px;
     }
 
-    .arrow {
+    #arrow {
         width: 50px;
     }
 
