@@ -101,16 +101,16 @@ p {
 }
 
 .top-grow {
-    flex-grow: 1;
+    /*flex-grow: 1;
     flex-basis: 100%;
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
     -ms-justify-content: flex-end;
-    display: -webkit-flex; /* Safari */
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
-    flex-direction: column;
+    flex-direction: column;*/
 }
 
 #quote {
@@ -122,7 +122,9 @@ p {
 }
 
 #arrow {
-    margin-bottom: 15px;
+    bottom: 15px;
+    position: absolute;
+    left: 50%;
 }
 
 
@@ -178,7 +180,7 @@ p {
 
 @media (max-device-width: 600px) {
 
-  /*  html, body {
+   html, body {
     }
 
     h1 {
@@ -219,7 +221,7 @@ p {
         font-size: 130px;
     }
 
-    #arrow {
+    .arrow {
         width: 50px;
         margin-bottom: 50px;
     }
@@ -255,7 +257,7 @@ p {
         margin-bottom: 100px;
     }
 
-*/
+
 
 }
 
