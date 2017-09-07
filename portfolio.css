@@ -162,7 +162,8 @@ p {
 }
 
 .desc_text {
-    width: 500px;
+    max-width: 500px;
+    min-width: 300px;
     margin-bottom: 50px;
 }
 
@@ -256,6 +257,7 @@ p {
     .desc_text {
         width: 100%;
         margin-bottom: 100px;
+        max-width:none;
     }
 
 
