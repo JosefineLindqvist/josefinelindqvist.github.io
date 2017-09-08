@@ -19,6 +19,7 @@
 
             // scroll into view
             ['home','work','about'].forEach(function(linkName) {
+                console.log(`${linkName}Link`)
                 document.getElementById(`${linkName}Link`).addEventListener('click', function (e) {
                     e.preventDefault();
                     (linkName === 'home' ? document.body : document.getElementById(`${linkName}`))
