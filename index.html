@@ -9,33 +9,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="smoothscroll.js"></script>
-    <script>
-        $(function(){
-            $("#includedMenu").load("menu.html");
-        });
 
-        // add event listener on load
-        window.addEventListener('load', function() {
-
-            // scroll into view
-            ['top','work','about'].forEach(function(linkName) {
-                document.getElementById(`${linkName}Link`).addEventListener('click', function (e) {
-                    e.preventDefault();
-                    (document.getElementById(`${linkName}`)).scrollIntoView({behavior: 'smooth'});
-                });
-            });
-        });
-
-        $(window).scroll(function() {
-            if ($(this).scrollTop()> 20) {
-                $('#arrow').fadeOut();
-            } else {
-                $('#arrow').fadeIn();
-            }
-        });
-
-
-    </script>
 
 </head>
 
@@ -254,7 +228,33 @@
     </div>
 
 
+    <script>
+        $(function(){
+            $("#includedMenu").load("menu.html");
+        });
 
+        // add event listener on load
+        window.addEventListener('load', function() {
+
+            // scroll into view
+            ['top','work','about'].forEach(function(linkName) {
+                document.getElementById(`${linkName}Link`).addEventListener('click', function (e) {
+                    e.preventDefault();
+                    (document.getElementById(`${linkName}`)).scrollIntoView({behavior: 'smooth'});
+                });
+            });
+        });
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop()> 20) {
+                $('#arrow').fadeOut();
+            } else {
+                $('#arrow').fadeIn();
+            }
+        });
+
+
+    </script>
 
 </body>
 
