@@ -227,45 +227,45 @@
     </div>
 
 
+    <script>
+        $(function(){
+            $("#includedMenu").load("menu.html");
+        });
 
+        window.onload = function() {
+            console.log(document.getElementById('topLink'));
+        };
+
+
+        // add event listener on load
+        window.addEventListener('load', function() {
+
+            // scroll into view
+            ['top','work','about'].forEach(function(linkName) {
+                console.log(document.getElementById(`${linkName}Link`));
+                console.log(document.getElementById(`${linkName}Link`));
+                document.getElementById(`${linkName}Link`).addEventListener('click', function (e) {
+                    console.log(document.getElementById(`${linkName}Link`));
+                    e.preventDefault();
+                    (document.getElementById(`${linkName}`)).scrollIntoView({behavior: 'smooth'});
+                });
+            });
+        });
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop()> 20) {
+                $('#arrow').fadeOut();
+            } else {
+                $('#arrow').fadeIn();
+            }
+        });
+
+
+    </script>
 
 </body>
 
-<script>
-    $(function(){
-        $("#includedMenu").load("menu.html");
-    });
 
-    window.onload = function() {
-        console.log(document.getElementById(`topLink`));
-    };
-
-
-    // add event listener on load
-    window.addEventListener('load', function() {
-
-        // scroll into view
-        ['top','work','about'].forEach(function(linkName) {
-            console.log(document.getElementById(`${linkName}Link`));
-            console.log(document.getElementById(`${linkName}Link`));
-            document.getElementById(`${linkName}Link`).addEventListener('click', function (e) {
-                console.log(document.getElementById(`${linkName}Link`));
-                e.preventDefault();
-                (document.getElementById(`${linkName}`)).scrollIntoView({behavior: 'smooth'});
-            });
-        });
-    });
-
-    $(window).scroll(function() {
-        if ($(this).scrollTop()> 20) {
-            $('#arrow').fadeOut();
-        } else {
-            $('#arrow').fadeIn();
-        }
-    });
-
-
-</script>
 
 </html>
 
