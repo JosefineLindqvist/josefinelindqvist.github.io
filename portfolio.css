@@ -7,6 +7,8 @@ html, body {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    background-image: url("background/background.png");
+    background-repeat: repeat;
 }
 
 h1 {
@@ -58,6 +60,7 @@ p {
     font-size: 130px;
     max-width: 780px;
     margin-bottom: 20px;
+    z-index: 5;
 }
 
 #arrow {
@@ -72,21 +75,58 @@ p {
     margin: auto;
     margin-bottom: 100px;
     text-align: center;
-    ;
+    z-index: 5;
 }
 
-.button {
+a {
     background-color: #6AA693; 
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 62px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     border-radius: 50px;
     margin-top: 20px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.2), 0 2px 16px 0 rgba(0,0,0,0.2);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
   }
+
+a:hover {
+    box-shadow: 0 2px 24px 0 rgba(0,0,0,0.22), 0 2px 24px 0 rgba(0,0,0,0.22);
+}
+
+#image {
+    position:relative;
+}
+    
+.top_left {
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.top_right {
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+.bottom_left {
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index: 0;
+}
+.bottom_right {
+    position:absolute;
+    bottom:0;
+    right:0;
+    z-index: 0;
+}
 
 .desktop {display:block;}
 .mobile {display:none}
@@ -116,6 +156,17 @@ p {
 
     .text {
         width: 90%;
+        margin-bottom: 200px;
+    }
+
+    a {font-size: 42px;
+        padding: 45px 240px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 150px;
+        margin-top: 60px;
+        box-shadow: 0 6px 36px 0 rgba(0,0,0,0.2), 0 6px 36px 0 rgba(0,0,0,0.2);
     }
 
     .desktop {
