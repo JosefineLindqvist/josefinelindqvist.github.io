@@ -82,6 +82,10 @@ p {
 }
 
 a {
+    color: black;
+}
+
+.button {
     background-color: #6AA693; 
     border: none;
     color: white;
@@ -98,7 +102,7 @@ a {
     cursor: pointer;
   }
 
-a:hover {
+.button:hover {
     box-shadow: 0 2px 24px 0 rgba(0,0,0,0.22), 0 2px 24px 0 rgba(0,0,0,0.22);
 }
 
@@ -163,7 +167,7 @@ a:hover {
         margin-bottom: 200px;
     }
 
-    a {font-size: 42px;
+    .button {font-size: 42px;
         padding: 45px 240px;
         text-align: center;
         text-decoration: none;
