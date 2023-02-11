@@ -29,60 +29,15 @@ a:hover {
 
 
 h1 {
-    font-size: 12px;
-    color: #4F4F4F;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-size: 86px;
+    color: #000000;
     text-align: center;
-}
-
-h2 {
-    font-size: 12px;
-    color: #4F4F4F;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
-h3{
-    font-size: 36px;
-    color: #4F4F4F;
-    font-weight: normal;
-    margin-top: 0;
 }
 
 p {
     font-size: 16px;
     margin: 0;
-}
-
-
-
-#menu {
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    font-size: 12px;
-    color: #6D6D6D;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: rgba(255, 255, 255, 0.9);
-    z-index: 10;
-}
-
-#menu_left {
-    float: left;
-    margin-left: 40px;
-}
-
-#menu_right {
-     float: right;
- }
-
-.menuitem{
-    margin-right:40px;
+    text-align: left;
 }
 
 
@@ -139,7 +94,7 @@ p {
 }
 
 .work_text {
-    text-align: center;
+    text-align: left;
     width: 500px;
     margin: auto;
     margin-bottom: 150px;
