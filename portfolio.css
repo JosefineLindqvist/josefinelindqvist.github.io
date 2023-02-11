@@ -28,6 +28,9 @@ p {
     text-align: left;
 }
 
+.icon {margin-top: 16px;
+    height: 119px;}
+
 #top {
     height: 100vh;
     -webkit-justify-content: center;
@@ -138,6 +141,9 @@ a {
     p {
         font-size: 48px;
     }
+
+    .icon {margin-top: 40px;
+        height: 300px;}
 
     #quote {
         max-width: 780px;
